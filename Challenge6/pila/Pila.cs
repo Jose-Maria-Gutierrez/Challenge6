@@ -8,15 +8,14 @@ namespace Challenge6.Pila
 {
     public static class Pila
     {
-        public static void encolar<T>(Stack<T> pila,T elementoPila)
+        public static void apilar<T>(Stack<T> pila,T elementoPila)
         {
             pila.Push(elementoPila);
         }
 
-        public static Object desencolar<T>(Stack<T> pila)
+        public static T desapilar<T>(Stack<T> pila)
         {
-            Object elementoPila = pila.Pop();
-            return elementoPila;
+            return pila.Pop();
         }
 
     }
